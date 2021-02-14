@@ -1,0 +1,21 @@
+{
+  "name": "discord-typescript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npx tsc && node ./build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.28",
+    "discord.js": "^12.5.1",
+    "typescript": "^4.1.5"
+  }
+}
