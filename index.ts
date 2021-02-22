@@ -16,12 +16,12 @@ commandFiles.forEach((file) => {
 readdir('./events/', (err, files) => {
   if (err) { return console.error; }
   files.forEach((file) => {
-    if (!file.endsWith('.js')) return;
     // eslint-disable-next-line global-require,import/no-dynamic-require
     const evt = require(`./events/${file}`);
     const evtName = file.split('.')[0];
     client.on(evtName, evt.bind(null, client));
   });
+  return () => {};
 });
 
 client.login(token);
